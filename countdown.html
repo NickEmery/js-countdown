@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Skillcrush 102 - Make a Timer" />
+  <title>Make a Timer</title>
+  <style>
+  #timer {
+  background-color: #66cc99;
+  color: #eee;
+  font-family: monospace;
+  font-size: 2em;
+  padding: 1em;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <h1>Timer</h1>
+
+  
+  <div id="timer">
+  </div>
+  <script>
+  var time = 10;
+
+
+var timer = document.getElementById("timer");
+
+setInterval( function() {
+  if (time < 0) {
+    return;               
+  }
+  timer.innerHTML = time;
+  time = time - 1; } , 1000);
+
+  </script>
+ </body>
+</html>
